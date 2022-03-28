@@ -2,6 +2,6 @@
 
 ![screen image](pic.png)
 
-![code image](con.png)
+![code image](code.png)
 
 ![console image](con.png)
