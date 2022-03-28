@@ -1,5 +1,21 @@
 function warnTheSheep(queue) {
-    //code
+    // Reverse the array
+    var myArr = queue.reverse()
+    var mySheep = 0;
+    // Get the sheep number in the queue with a loop
+    for (var i = 0; i < queue.length; i++) {
+        if (queue[i] == 'sheep') {
+            mySheep = mySheep + 1;
+        } else if (queue[i] == 'wolf') {
+            break;
+        }
+    }
+    // Check the reversed array to see if 'wolf' is at the start
+    if (myArr[0] == "wolf") {
+        return "Pls go away and stop eating my sheep";
+    } else {
+        return "Oi! Sheep number " + mySheep + "! You are about to be eaten by a wolf!";
+    }
 }
 
 
